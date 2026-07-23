@@ -83,11 +83,7 @@ jobs:
           else
             BRANCH="nongki"
           fi
-          curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh" | bash -s $BRANCH
-          git clone https://raw.githubusercontent.com/lgslegend/KernelSU_Patches patches
-          curl -O https://raw.githubusercontent.com/lgslegend/KernelSU_Patcher/refs/heads/master/KernelSU_Patcher.h
-          bash Patch.sh
-
+          curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh" | bash -s $B
       - name: Add KernelSU Config to Defconfig
         run: |
           cd kernel-source
