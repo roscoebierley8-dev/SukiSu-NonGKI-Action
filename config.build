@@ -17,7 +17,7 @@ export KERNEL_BRANCH="sukisu"
 # 是否启用 SUSFS（true/false)
 # I haven't actually updated SUSFS support yet, so please don't enable it
 # 实际上我还没有更新SUSFS支持，所以请不要启用这个
-export ENABLE_SUSFS="false"
+export ENABLE_SUSFS="true"
 
 # Clang version for apt install (e.g., 21)
 # Clang 版本用于 apt 安装（例如 21)
