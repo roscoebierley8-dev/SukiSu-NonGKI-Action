@@ -5,13 +5,13 @@
 # 内核源码仓库链接（必需）
 # This is an example of my phone's kernel URL
 # 这是我的手机的内核示例
-export KERNEL_REPO="https://github.com/nzlnice/kernel_lenovo_J607Z.git"
+export KERNEL_REPO="https://github.com/roscoebierley8-dev/android_kernel_oneplus_sm8250.git"
 
 # Kernel branch to clone (required)
 # 要克隆的内核分支（必需）
 # This is also
 # 这个也是
-export KERNEL_BRANCH="sukisu"
+export KERNEL_BRANCH="oos13.1"
 
 # Enable SUSFS branch（true/false）
 # 是否启用 SUSFS（true/false)
