@@ -79,13 +79,13 @@ jobs:
         run: |
           cd kernel-source
           if [ "${{ env.ENABLE_SUSFS }}" = "yes" ] || [ "${{ env.ENABLE_SUSFS }}" = "true" ]; then
-            BRANCH="susfs-main"
+            BRANCH="main"
           else
             BRANCH="nongki"
           fi
           curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh" | bash -s $BRANCH
-          git clone https://github.com/jonjeexe/KernelSU_Patches Patches
-          curl -O https://raw.githubusercontent.com/jonjeexe/KernelSU_Patches/refs/heads/non-GKI/Patch.sh
+          git clone https://raw.githubusercontent.com/lgslegend/KernelSU_Patches patches
+          curl -O https://raw.githubusercontent.com/lgslegend/KernelSU_Patcher/refs/heads/master/KernelSU_Patcher.h
           bash Patch.sh
 
       - name: Add KernelSU Config to Defconfig
